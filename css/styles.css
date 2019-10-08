@@ -1,0 +1,622 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  /* display: block; */
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Mansalva", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.navigation {
+  background: slateblue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.logo {
+  /* display:flex;
+	flex-direction: row;
+	align-items: center; */
+  /* display: inline-block; */
+  animation:
+  pulse 3s ease infinite alternate, 
+  nudge 5s linear infinite alternate;
+
+}
+
+a {
+  color: lightgray;
+  /* display: inline-block; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: 10px;
+  margin: 10px; */
+}
+
+.innovationbox {
+  /* box-sizing: border-box; */
+  /* display: inline-block; */
+
+  padding-top: 70px;
+  /* width: 100%; */
+  padding-bottom: 40px;
+  /* height: 100%; */
+  display: flex;
+
+  justify-content: space-between;
+}
+
+#forhead {
+  padding-top: 6%;
+  /* display: inline-block; */
+  /* height: 90%%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* align-content: center;  */
+  padding-left: 80px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  /* padding-left: 80px; */
+  /* padding-bottom: 40px; */
+}
+.getstarted {
+  /* box-sizing: border-box; */
+  /* padding: 8px; */
+  border: solid black 2px;
+  /* left: 0;
+  top: 50%; */
+  /* width: 100%; */
+  text-align: center;
+  width: 170px;
+  /* margin-left: 125px; */
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  animation: 
+  stretch
+  1.5s
+  ease-out
+  0s
+  alternate
+  infinite
+  none
+  running;
+}
+
+#mage {
+  /* margin-left: 83px; 
+  display: inline-block; */
+  height: 400px;
+  width: 400px;
+  background-image: url("/great-idea/img/header-img.png");
+  background-repeat: no-repeat;
+}
+
+.features {
+  /* display: inline-block; */
+
+  /* padding: 30px 20px 40px 0; */
+}
+
+.about {
+  /* display: inline-block; */
+  /* padding-left: 70px; */
+}
+
+.last {
+  /* display: inline-block; */
+
+  /* padding: 20px 34px 34px 0; */
+}
+
+#contact {
+  padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.thisone {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  /* width:100%; */
+  display: flex;
+  /* justify-content: space-around; */
+  background: slateblue;
+  position: sticky;
+  top: 0;
+}
+
+.twoarticle {
+  /* display: inline-block; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background: blue;
+  font-size: 30px;
+  color: salmon;
+}
+
+.middle-img {
+  width: 100%;
+}
+
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.feat-about-content {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.intro {
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.box {
+  width: 48%;
+
+  background: lightgray;
+  border: solid black 2px;
+  padding: 10px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-color: black;
+}
+
+.outro {
+  width: 47%;
+  height: 100%;
+}
+
+.header-img {
+}
+
+.services-header-img {
+  width: 100%;
+}
+
+.content-holder {
+  padding-top: 40px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.rows {
+  padding-bottom: 33px;
+}
+
+.lastimg {
+  width: 48%;
+}
+
+ul {
+  /* list-style-type: circle; */
+}
+
+li::before {
+  content: "•";
+  color: black;
+}
+
+.services-info-img {
+  width: 100%;
+}
+
+.tthisone {
+  padding-top: 7px;
+  /* display: flex;
+	align-items: center; */
+}
+
+/*************  media queries  *************/
+
+@media (max-width: 500px) {
+  /* .container {
+
+        max-width: 500px;
+
+    } */
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mage {
+    display: none;
+  }
+
+  .feat-about-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+  }
+
+  /*  */
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+  }
+
+  .box {
+    margin-bottom: 40px;
+    /* padding-top: 20px; */
+  }
+
+  .last-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid black;
+  }
+
+  .outro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid black;
+  }
+
+  .navigation {
+    position: initial;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation a {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid black;
+    justify-content: center;
+  }
+}
+
+
+/* >>>>>>>>>>                    tablet view                     <<<<<<<<<<<<< */
+
+
+@media (max-width: 800px) {
+  #mage {
+    display: none;
+  }
+
+  .innovationbox {
+    display: flex;
+    justify-content: center;
+  }
+
+  #forhead {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .second-part-articles {
+    padding: 0 10px 0;
+  }
+
+  .feat-about-content {
+    padding: 0 10px 0;
+  }
+  #frontimage {
+    padding: 40px 10px 0;
+  }
+}
+
+
+
+
+
+@keyframes pulse {
+    0%, 100% {
+      background-color: red;
+    }
+    50% {
+      background-color: orange;
+    }
+  }
+  
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+  }
+
+
+
+
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
+  
